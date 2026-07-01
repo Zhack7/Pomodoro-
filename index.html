@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  
+  <!-- Baris ini yang memanggil file CSS agar tampilannya keren -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pomodoro-container">
+    <h2>Pomodoro Timer</h2>
+    <div class="modes">
+      <button class="mode-btn active" onclick="setMode('pomodoro', this)">Focus</button>
+      <button class="mode-btn" onclick="setMode('shortBreak', this)">Short Break</button>
+      <button class="mode-btn" onclick="setMode('longBreak', this)">Long Break</button>
+    </div>
+    
+    <div class="timer-display" id="time">25:00</div>
+    
+    <div class="controls">
+      <button class="btn start-btn" id="startPauseBtn" onclick="toggleTimer()">Start</button>
+      <button class="btn reset-btn" onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <!-- Baris ini yang memanggil file JavaScript agar tombolnya berfungsi -->
+  <script src="script.js"></script>
+
+</body>
+</html>
